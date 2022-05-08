@@ -1,0 +1,365 @@
+h1, h2{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.link-white a {
+    color: white;
+    text-decoration: none;
+}
+
+.link-white a:hover {
+    opacity: 0.6;
+}
+
+
+
+.bg-blue300 {
+    background-color: #e2e2e2;
+}
+
+
+.bg-gray {
+    background-color: rgb(214, 214, 214);
+}
+
+.bg-item-gray {
+    background-color: #dfdfdf;
+}
+
+.text-blue{
+    color:rgb(0, 0, 145);
+}
+
+.background02 {
+    margin-top: -20px;
+    background-image: linear-gradient(#0099ff, rgb(0, 255, 242));
+}
+
+.bg-03{
+    margin-top: -10px;
+    background-image:linear-gradient(#000b76, rgb(1, 118, 122));
+}
+
+.bg-04{
+    background-image: linear-gradient(#731bbb, rgb(189, 112, 192)); 
+}
+
+.bg-deploy {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.20), 0 6px 6px rgba(0, 0, 0, 0.20);
+}
+
+.text-roxo{
+    color: #4400b1;
+}
+
+
+.container_{
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.logo{
+    display: none;
+    position: absolute;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.cabecalho {
+    background-image: url("../assets/template.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 10%;
+
+    min-width: 100%;
+    height: 600px;
+}
+
+
+.cabecalho-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-end;
+
+    
+    background-color: #0000003b;
+    margin: 60px;
+    width: 50%;
+    height: 100%;
+}
+
+.btn-w{
+    width: 160px;
+}
+
+ 
+
+.cabecalho li:hover{
+    color: #757575;
+}
+
+.cabecalho li{
+    list-style: none;
+    margin: 30px;
+}
+
+li{
+    list-style-image:url("../assets/v.png") ;
+}
+
+
+/* TAMANHO */
+
+.w250{
+    width: 250px;
+    height: 250px;
+}
+
+.p-ben{
+    max-width: 700px;
+}
+
+.w400{
+    width: 400px;
+    height: 400px;
+}
+
+.w350{
+    max-width: 380px;
+    height: 500px;
+}
+
+.pb-5{
+    padding-bottom:5px ;
+}
+
+.padding-top{
+    padding-top: 50px;
+}
+
+.p-top-bottom {
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.border-10{
+    border-radius: 10px;
+}
+
+
+/* BENEFICIONS */
+
+.benefits h4{
+    color: rgb(83, 182, 113);
+}
+
+.waves01{
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal-button{
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+.list-grup{
+    max-width: 70%;
+}
+
+.w50{
+    width: 400px;
+}
+
+
+footer {
+    min-height: 500px;
+    width: 100%;
+    background-color: #01003f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.copyright {
+    background-color: #000b76;
+    color: white;
+    height: 4vh;
+}
+
+
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1200px) {
+    .pagaments {
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media (max-width: 1135px) {
+    .cabecalho-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    
+        
+        background-color: #0000003b;
+        margin: 60px;
+        width: 90%;
+        height: 100%;
+    }
+}
+
+@media (max-width:925px) {
+    .list-group-item {
+        font-size: 24px;
+    }
+
+    .list-grup {
+        max-width: 90%;
+    }
+}
+
+@media (max-width:465px ) {
+    .w400{
+        width: 250px;
+        height: 250px;
+    }
+
+    .w350{
+        max-width: 320px;
+        height: 520px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 790px) {
+    .list-group-item {
+        font-size: 20px;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    nav {
+       display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: #fff;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition: 0.5s;
+        
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        margin: 15px;
+        
+    }
+
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 600px;
+
+        background-color: #0012af;
+
+        z-index: 10;
+        transition: 0.3s;
+    }
+
+    .menu-section.on nav {
+        display: flex;
+        justify-content: center;       
+        
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 20;
+        top: 0px;
+        z-index: 1;
+    }
+
+    .menu-section.on .menu-toggle .one{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two{
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three{
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on nav button{
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        text-align: center;
+    }
+
+    .menu-section.on nav ul{
+        
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:425px ) {
+    html{
+        font-size: 85%;
+    }
+    
+    .list-group-item {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* PERGUNTAS */
+
+
+#answer {
+    display: none;
+}
+
+
