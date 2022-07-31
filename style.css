@@ -67,7 +67,7 @@ h1, h2{
 }
 
 .cabecalho {
-    background-image: url("../assets/template.png");
+    background-image: url("./assets/template.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 10%;
